@@ -81,7 +81,7 @@ import multiprocessing, functools
 
 # Local imports
 sys.path.append('../')
-from adaptive_resnets import *
+from adaptiveresnets import *
 
 logger_name = 'master_logger_multirun'
 logger_name += str(datetime.date.today())
