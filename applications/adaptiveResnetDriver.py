@@ -146,7 +146,8 @@ for key in list(masterdict.keys())[:args.data_repetitions]:
         parameters['depth_start'] = args.depth_start
         parameters['depth_end'] = args.depth_end
         # Actually do this manualy based on epochs / number of adaptive layers
-        adaptive_epochs = args.keras_epochs /(args.depth_end - args.depth_start)
+        # Divided by two to account for secondary training
+        adaptive_epochs = 0.5*(args.keras_epochs /(args.depth_end - args.depth_start))
         print('adaptive_epochs = ',adaptive_epochs)
         parameters['keras_epochs'] = adaptive_epochs
         parameters['layer_rank'] = args.layer_rank
