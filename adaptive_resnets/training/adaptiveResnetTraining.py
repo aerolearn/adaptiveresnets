@@ -13,6 +13,9 @@
 
 import numpy as np
 
+from .trainingUtilities import *
+from ..neuralNetworks import *
+
 # Adaptive training layer by layer (for ResNets)
 
 def adaptive_resnet_parameters():

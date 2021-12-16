@@ -12,3 +12,6 @@
 # Software Foundation) version 2.0 dated June 1991.
 
 from .trainingUtilities import *
+
+from .adaptiveResnetTraining import *
+

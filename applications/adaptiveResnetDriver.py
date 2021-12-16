@@ -17,7 +17,7 @@
 from argparse import ArgumentParser
 
 parser = ArgumentParser(add_help=True)
-parser.add_argument('-data_file', dest='data_file',required=False, default = 'data/three_dee/dataSets_L3_480.pickle',\
+parser.add_argument('-data_file', dest='data_file',required=False, default = 'data/dataSets_L3_480.pickle',\
                                                                                          help='location for data',type=str)
 parser.add_argument('-OMP_NUM_THREADS', dest='OMP_NUM_THREADS',required=False, default = '4',\
                                                                         help='env variable for openmp parallelism',type=str)
@@ -77,8 +77,7 @@ except:
 tf.keras.backend.set_floatx('float64')
 # Local imports
 sys.path.append('../')
-from aerolearn import *
-from adaptiveResnetTraining import *
+from adaptive_resnets import *
 
 logger_name = 'master_logger_multirun'
 logger_name += str(datetime.date.today())
