@@ -43,4 +43,4 @@ arXiv:2112.07096.
 }</pre></details>
 
 
-In order to run this code make sure to get the [dataset from here](https://github.com/aerolearn/datasets/blob/main/adaptiveresnets/dataSets_L3_480.pickle). The code is set to run by reading the dataset from a folder called `data`, within this subdirectory.
+In order to run this code make sure to get the [dataset from here](https://github.com/aerolearn/datasets/blob/main/adaptiveresnets/dataSets_L3_480.pickle). The code is set to run by reading the dataset from a folder called `data/`, within this subdirectory.
